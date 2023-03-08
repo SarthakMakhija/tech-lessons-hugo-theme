@@ -53,3 +53,62 @@ body {
     /* Safari, Android, iOS */ url("/fonts/inter-v3-latin-700.svg#Inter")
       format("svg"); /* Legacy iOS */
 }
+
+.tag-list {
+  width: 100%;
+  font-size: 0.9em;
+}
+
+a.button {
+    margin: 0.1em;
+    padding: 0.2em 0.4em;
+    border-radius: 0.3em;
+    border: 1px solid;
+    display: inline-block;
+    color: #337ab7;
+    text-decoration: none;
+}
+
+.tag-list-container {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: .9em;
+    display: inline-block;
+    text-align: center;
+}
+
+p.tag {
+    font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+}
+
+.sr-only {
+    position: absolute;
+    padding: 0;
+    margin: -1px;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+ul.share-buttons {
+    list-style: none;
+    padding: 1.5% 0 1.5% 0;
+    margin: 0;
+    text-align: center;
+}
+
+ul.share-buttons li {
+    display: inline;
+}
+
+ul.share-buttons a {
+    color: #337ab7;
+}
+
+.align-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

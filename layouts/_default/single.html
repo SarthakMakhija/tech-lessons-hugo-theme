@@ -5,6 +5,9 @@
   {{ if (and .Params.thumbnail (not (or .Site.Params.hidePageThumbnail .Params.hidePageThumbnail)) ) }}
   <div class="relative max-w-5xl mx-auto px-4">
     <img src="{{ .Params.thumbnail }}" class="rounded-lg shadow-sm w-full object-contain" />
+    {{ if .Params.caption }}
+    <figcaption class="font-extralight text-xs"><i>{{ .Params.caption }}</i></figcaption>
+    {{end}}
     {{ if not (or (or .Site.Params.hideMeta .Params.hideMeta) false) }}
     <div class="absolute top-4 right-8 rounded shadow bg-white text-gray-900 dark:bg-gray-900 dark:text-white px-2 py-0.5">
       {{ $datestr }}
@@ -13,7 +16,7 @@
   </div>
   {{ end }}
 
-  <article class="prose lg:prose-lg mx-auto my-8 dark:prose-dark px-4">
+  <article class="prose lg:prose-lg mx-auto my-8 dark:prose-dark px-4 max-w-5xl">
 
     <h1 class="text-2xl font-bold mb-2">{{ .Title }}</h1>
     {{ if not (or (or .Site.Params.hideMeta .Params.hideMeta) false) }}
@@ -67,7 +70,10 @@
     {{ .Content }}
   </article>
 
+  {{- partial "share.html" . -}}
+
+  {{- partial "tags_list.html" . -}}
+
   {{- partial "comments.html" . -}}
 
-  {{- partial "social.html" . -}}
 {{ end }}

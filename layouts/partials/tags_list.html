@@ -1,0 +1,11 @@
+{{ if .Params.tags }}
+<div class="tag-list-container">
+    <div class="tag-list">
+        {{ range $tag := .Params.tags }}
+        <a class="button" href="">
+            <p class="tag"><i class="fa fa-fw fa-tag"></i>{{ $tag }}</p>
+        </a>
+        {{ end }}
+    </div>
+</div>
+{{end}}

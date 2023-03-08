@@ -4,6 +4,8 @@
 @import "node_modules/tailwindcss/components";
 /* Site Specific */
 @import "assets/css/site";
+/* Font Awesome */
+@import "assets/css/font-awesome.min";
 /* Paginator */
 @import "assets/css/paginator";
 /* Tailwind's utility classes - generated based on config file */

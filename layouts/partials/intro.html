@@ -1,9 +1,34 @@
-<section class="{{ .Site.Params.ascentColor | default "bg-pink-50" }} dark:bg-gray-900">
-  <div class="container max-w-screen-lg mx-auto px-6 py-12 grid md:grid-cols-2 gap-4 lg:gap-16 items-center">
-    <div>
-      <h1 class="text-4xl font-bold mb-4">{{ .Site.Params.introTitle | safeHTML}}</h1>
-      <p class="font-light text-lg">{{ .Site.Params.introSubtitle | safeHTML}}</p>
-    </div>
-    <img class="rounded-lg shadow-sm" src="{{ .Site.Params.introPhoto }}" alt="{{ .Site.Title }}" />
+<style>
+  .call-out {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    height: 50%;
+    font-size: 1.19em;
+    color: #fff;
+    background: #fff center center;
+    padding: 10% 10%;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .header-text {
+    font-size: 1.9em;
+    font-weight: bold;
+    font-family: "Source Sans Pro",Helvetica,Arial,sans-serif;
+    color: #fff;
+  }
+  .header-slogan-text {
+    font-style: italic;
+    padding-left: 200px;
+    font-size: 1em;
+    color: #fff;
+  }
+</style>
+
+<section>
+  <div id="main" class="call-out" style="background-image: url('/header.png')">
+    <div class="header-text">{{ .Site.Params.introTitle | safeHTML}}</div>
+    <div class="header-slogan-text">{{ .Site.Params.introSubtitle | safeHTML}}</div>
   </div>
+  <figcaption class="font-extralight text-xs"><i>Photo by lil artsy on Pexels</i></figcaption>
 </section>
