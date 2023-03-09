@@ -1,7 +1,15 @@
-<footer class="container p-6 mx-auto flex justify-between items-center">
+<style>
+ .footer{
+    width: 100%;
+    color: #a6a6a6;
+    background-color: #e5e5e5;
+}
+</style>
+
+<footer class="container footer p-6 mx-auto flex justify-between items-center">
   <span class="text-sm font-light">
     {{ if (isset .Site.Params "copyright") }}
-    {{ .Site.Params.copyright | safeHTML }}
+    {{ .Site.Params.copyright | safeHTML }} / Powered by  <a class="font-bold" target="_blank" href="https://gohugo.io/">Hugo</a>
     {{ else }}
     {{ dateFormat "2006" now }} © {{ .Site.Title }}
     {{ end }}
