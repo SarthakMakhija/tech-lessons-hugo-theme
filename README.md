@@ -1,6 +1,6 @@
 ### Hugo theme
 
-[tech-lessons.in](https://tech-lessons.in) is a Hugo based blog and this repository is a Hugo theme forked from [blist](https://github.com/apvarun/blist-hugo-theme).
+[tech-lessons.in](https://tech-lessons.in) is a Hugo based blog and this repository is a Hugo theme forked from [blist](https://github.com/apvarun/blist-hugo-theme). 
 
 ### Blist Features
 
@@ -30,4 +30,4 @@
 
 ### Posts
 
-[tech-lessons-posts](https://github.com/SarthakMakhija/tech-lessons-posts) repository contains the posts for [tech-lessons.in](https://tech-lessons.in).
+[tech-lessons-posts](https://github.com/SarthakMakhija/tech-lessons-posts) repository contains the posts for [tech-lessons.in](https://tech-lessons.in). [tech-lessons-posts](https://github.com/SarthakMakhija/tech-lessons-posts) uses this theme as a git submodule.
