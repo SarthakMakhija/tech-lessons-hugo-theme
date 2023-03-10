@@ -1,3 +1,4 @@
+{{ if (ne (trim .Page.RelPermalink "/") "page/about") }}
 {{ if .Site.Params.comments.system }}
 <div class="px-2 mb-2">
   {{ if eq .Site.Params.comments.system "disqus" }}
@@ -28,4 +29,5 @@
   </script>
   {{ end }}
 </div>
+{{ end }}
 {{ end }}
