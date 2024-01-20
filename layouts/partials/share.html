@@ -1,6 +1,6 @@
 {{ if not (or (eq (trim .Page.RelPermalink "/") "en/page/about") (eq (trim .Page.RelPermalink "/") "en/page/projects")) }}
 
-{{ $url := printf "%s" .Permalink | absLangURL }}
+{{ $url := printf "%s%s" .Site.BaseURL .Permalink }}
 {{ $textBody := print .Title "\n\n" (.Summary | truncate 200) "\n\n" $url "\n" }}
 {{ $encodedSummary := strings.TrimPrefix "=" (querify "" (.Summary | truncate 200))  }}
 
