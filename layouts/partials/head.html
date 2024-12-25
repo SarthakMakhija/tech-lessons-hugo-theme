@@ -26,6 +26,7 @@
   {{ hugo.Generator }}
 
   {{- $styles := resources.Get "css/styles.css" | postCSS (dict "config" "./assets/css/postcss.config.js") -}}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
 
   <!-- Katex support -->
   {{ if .Params.math }}
